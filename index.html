@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Portfolio App</h2>
+      <p>Select a portfolio and date to view the portfolio information:</p>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <label for="portfolio-select">Portfolio:</label>
+          <select id="portfolio-select">
+            <option value="portfolio1">Portfolio 1</option>
+            <option value="portfolio2">Portfolio 2</option>
+            <option value="portfolio3">Portfolio 3</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <label for="date-select">Date:</label>
+          <select id="date-select">
+            <option value="2022-01-01">January 1, 2022</option>
+            <option value="2022-02-01">February 1, 2022</option>
+            <option value="2022-03-01">March 1, 2022</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows will be populated dynamically with JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="main">
+      <div class="sidebar-right">
+        <h2>Portfolio Summary</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Group</th>
+                <th>Share</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ABC</td>
+                <td>Group A</td>
+                <td>25%</td>
+              </tr>
+              <tr>
+                <td>XYZ</td>
+                <td>Group B</td>
+                <td>75%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
